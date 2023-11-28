@@ -73,3 +73,47 @@ SELECT * FROM carteirinha;
 
 INSERT INTO carteirinha VALUES (1, '2023-12-31', '46772304200');
 INSERT INTO carteirinha VALUES (2, '2024-05-31', '54599211102');
+
+
+
+-- editora
+
+CREATE TABLE editora (
+	idEditora		INT				PRIMARY KEY		AUTO_INCREMENT,
+    nome			VARCHAR(30)		NOT NULL
+);
+
+SELECT * FROM editora;
+
+INSERT INTO editora VALUES (1, 'FATEC');
+
+
+
+-- telefone-editora
+
+CREATE TABLE telefoneEditora (
+	idTelefone 		INT 			AUTO_INCREMENT,
+	numero 			VARCHAR(11),
+	idEditora 		INT,
+	PRIMARY KEY (idTelefone),
+	FOREIGN KEY (idEditora) REFERENCES editora(idEditora)
+);
+
+SELECT * FROM telefoneEditora;
+
+INSERT INTO telefoneEditora VALUES (1, '1155667788', 1);
+
+-- email-editora
+
+CREATE TABLE emailEditora(
+	idEmail			INT			AUTO_INCREMENT,
+    email			VARCHAR(40),
+    idEditora		INT,
+    PRIMARY KEY (idEmail),
+    FOREIGN KEY (idEditora) REFERENCES editora(idEditora)
+);
+
+SELECT * FROM emailEditora;
+
+INSERT INTO emailEditora VALUES (1, 'editora.fatec@gov.com.br', 1);
+
