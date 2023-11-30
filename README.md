@@ -43,7 +43,43 @@ autores e editoras, e o usuário não pode fazer empréstimos caso sua carteirin
     Editora:(Relação de 1:N com Livro);
     Autor: (Relação de N:N com Livro).
 
+Explicação: Criei um cenário onde fosse possivel usar todos os tipos de atributos e todos os tipos de relacionamentos como pedido pelo professor.
+No caso desse cenário de biblioteca cada usuário tem uma carteirinha que ele usa para fazer os emprestimos dos livros.
+
 
 # 2 Modelagem Conceitual - DER:
 
-![Alt text](image-1.png)
+<img src='/img/image1.png'>
+
+Obs: Arquivo completa da Modelagem Conceitual no arquivo 'der e mer.pdf' dentro da pasta 'img' do repositório. 
+
+# 3 Modelagem Lógica:
+
+<img src='/img/image2.png'>
+
+Obs: Arquivo completo da Modelagem Lógica no arquivo 'der e mer.pdf' dentro da pasta 'img' do repositório.
+
+# 4 Modelagem Física:
+
+<img src='/img/image3.png'>
+
+Obs: A imagem acima é apenas um breve exemplo da Modelagem Física. Modelagem Física completa no arquivo 'Biblioteca - Trabalho MBD' dentro da pasta 'SQL' do repositório.
+
+# 5 Dados:
+
+<img src='/img/image4.png'>
+
+Obs: Breve exemplo de inserção de dados na imagem acima. Mais exemplos no arquivo 'Biblioteca - Trabalho MBD' dentro da pasta 'SQL' deste repositório.
+
+# 6 CRUD:
+
+<img src='/img/image5.png'>
+
+Obs: Imagem acima se trata apenas de um exemplo do Create(Insert). Exemplo completo de CRUD no arquivo 'Exemplos CRUD.pdf' na pasta 'img' deste repositório.
+
+# 7 Relatórios:
+
+<img src='/img/image6.png'>
+
+Obs: imagem acima se trata apenas de um exemplo de um Relatório SQL. O restante dos exemplos esta no arquivo 'Biblioteca - Trabalho MDB' dentro da pasta 'SQL' deste repositório.
+
